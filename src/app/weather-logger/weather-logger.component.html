@@ -1,0 +1,15 @@
+<div class="container">
+	<form>
+	  <div class="form-group row">
+	    <label for="cities">City names or Zipcodes (Comma Separated)</label>
+			<input class="form-control" id="cities" [(ngModel)]="cities" placeholder="e.g. Tokyo, Washington, 1001" name="cities">
+	  </div>
+	  <div class="form-group row">
+	  <button type="button" class="btn btn-primary" (click)="onGetWeather()">Get Weather</button>
+		</div>
+	  <div class="form-group row">
+	    <label for="result">Weather Log</label>
+		<textarea class="form-control" id="result" [(ngModel)]="resultText" readonly="" name="result" rows="20" ></textarea>
+	  </div>
+	</form>
+</div>
